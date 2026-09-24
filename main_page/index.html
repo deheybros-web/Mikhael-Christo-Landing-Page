@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mikhael Christo — Aspiring Full-Stack Web Developer portfolio.">
+  <meta name="theme-color" content="#0a0d14">
+  <title>Mikhael Christo | Aspiring Full-Stack Dev</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script>
+    (() => {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'light') document.documentElement.dataset.theme = 'light';
+    })();
+  </script>
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="navbar container" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Mikhael Christo home">
+        <span class="brand-main">mycv</span>
+        <span class="brand-divider">|</span>
+        <span class="brand-code">code</span>
+      </a>
+
+      <div class="nav-actions">
+        <a class="nav-whatsapp" href="https://wa.me/6285169935767" target="_blank" rel="noopener noreferrer" aria-label="Chat with Mikhael on WhatsApp">
+          WhatsApp
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.85 11.85 0 0 0 12.03 0C5.46 0 .12 5.34.12 11.91c0 2.1.55 4.15 1.59 5.96L.02 24l6.28-1.65a11.9 11.9 0 0 0 5.72 1.46h.01C18.6 23.81 23.94 18.47 23.94 11.9c0-3.18-1.24-6.17-3.44-8.4ZM12.03 21.8h-.01a9.88 9.88 0 0 1-5.04-1.38l-.36-.21-3.73.98 1-3.63-.23-.37a9.84 9.84 0 0 1-1.51-5.28C2.15 6.49 6.58 2.2 12.04 2.2c2.65 0 5.14 1.04 7.02 2.92a9.75 9.75 0 0 1 2.9 6.98c0 5.47-4.45 9.7-9.93 9.7Zm5.43-7.27c-.3-.15-1.78-.88-2.06-.98-.28-.1-.49-.15-.7.15-.21.3-.8.98-.98 1.18-.18.2-.36.23-.66.08-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.74-1.64-2.04-.17-.3-.02-.46.13-.61.14-.14.3-.36.45-.54.15-.18.2-.31.3-.51.1-.2.05-.39-.03-.54-.08-.15-.7-1.68-.96-2.3-.25-.6-.5-.51-.7-.52h-.6c-.2 0-.54.08-.82.39-.28.3-1.07 1.04-1.07 2.54s1.1 2.95 1.26 3.15c.15.2 2.17 3.31 5.25 4.64.73.32 1.3.51 1.75.65.74.23 1.42.2 1.95.12.59-.09 1.78-.73 2.03-1.44.25-.71.25-1.32.17-1.44-.08-.13-.28-.2-.58-.36Z"/></svg>
+        </a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light mode" title="Toggle theme">
+          <svg class="theme-icon sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+        </button>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="primaryMenu" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <div class="nav-menu" id="primaryMenu">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> Aspiring Full-Stack Web Developer</p>
+          <h1>Building small ideas<br><em>into real things.</em></h1>
+          <p class="hero-quote">“Lets turn habit and hobbies into future”.</p>
+          <p class="hero-text">I’m Mikhael Christo — a student who learns web development by making random projects, breaking things, fixing them, and getting a little better every day.</p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#about">About me <span>↗</span></a>
+            <a class="btn btn-secondary" href="#contact">Contact <span>↗</span></a>
+          </div>
+          <div class="hero-meta" aria-label="Quick profile information">
+            <span>Born in Sleman</span>
+            <span>27 Dec 2011</span>
+            <span>Indonesia</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-delay">
+          <div class="photo-frame">
+            <div class="photo-glow"></div>
+            <img src="../assets/img/mypic.jpeg" alt="Portrait of Mikhael Christo" loading="eager">
+            <div class="photo-label photo-label-top">MCH / 09C</div>
+            <div class="photo-label photo-label-bottom">learning in public</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-border" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span> 01 — About</p>
+          <h2>A little bit<br><em>about me.</em></h2>
+        </div>
+
+        <div class="about-layout">
+          <div class="about-intro reveal">
+            <p class="large-copy">I’m still at school, but I treat every random idea as a reason to build something.</p>
+            <p>My favourite way to learn is simple: make a project, hit a bug, understand why it happened, then do it again. I’m currently focused on becoming stronger in FrontEnd development while gradually moving deeper into BackEnd.</p>
+          </div>
+
+          <div class="about-facts reveal reveal-delay">
+            <article class="fact-card">
+              <span class="fact-number">01</span>
+              <div><h3>Name</h3><p>Mikhael Christo</p></div>
+            </article>
+            <article class="fact-card">
+              <span class="fact-number">02</span>
+              <div><h3>Birth place / year</h3><p>Sleman, 27 December 2011</p></div>
+            </article>
+            <article class="fact-card fact-card-wide">
+              <span class="fact-number">03</span>
+              <div><h3>Education</h3><p>Grade 1–4 · SDK Thomas Aquino<br>Grade 4–6 · SD Santa Maria<br>Grade 7–9 · SMP Susteran <strong>(Current)</strong><br>Grade 10–12 · SMA Kolese DeBritto <strong>(Soon)</strong></p></div>
+            </article>
+            <article class="fact-card fact-card-wide">
+              <span class="fact-number">04</span>
+              <div><h3>Hobby</h3><p>Making random projects everyday to get better and get used into Web Development.</p></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-border" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span> 02 — Skills & work</p>
+          <h2>Learning by<br><em>building.</em></h2>
+        </div>
+
+        <div class="skills-layout">
+          <div class="skills-panel reveal">
+            <div class="skill-head"><div><span class="skill-kicker">FrontEnd Web Development</span><h3>HTML · CSS · JS</h3></div><strong>75%</strong></div>
+            <div class="skill-track"><span style="--level: 75%"></span></div>
+            <p>My current main focus: responsive layouts, UI interactions, DOM manipulation, basic state, and turning designs into working pages.</p>
+
+            <div class="skill-head secondary"><div><span class="skill-kicker">BackEnd Web Development</span><h3>Growing phase</h3></div><strong>15%</strong></div>
+            <div class="skill-track"><span style="--level: 15%"></span></div>
+            <p>Currently exploring the foundations behind servers, APIs, databases, authentication, and full-stack architecture.</p>
+          </div>
+
+          <div class="skills-side reveal reveal-delay">
+            <div class="mini-stat"><span>Current mindset</span><strong>FrontEnd Web Development</strong></div>
+            <div class="mini-stat"><span>Next direction</span><strong>BackEnd + Full-Stack Development</strong></div>
+          </div>
+        </div>
+
+        <div class="projects-wrap">
+          <div class="sub-heading reveal"><span>03</span><h3>My projects</h3><p>Small builds that show what I’ve been learning.</p></div>
+          <div class="project-grid">
+            <article class="project-card reveal">
+              <div class="project-image"><img src="../assets/img/project1.png" alt="ShiftTiers project preview" loading="lazy"><span class="project-index">01</span></div>
+              <div class="project-content"><div class="project-tags"><span>Community</span><span>Gaming</span></div><h4>ShiftTiers</h4><p>A Minecraft PvP community platform for players, tiering, and community identity.</p><a class="project-link" href="https://shiftiers.vercel.app" target="_blank" rel="noopener noreferrer">Visit project <span>↗</span></a></div>
+            </article>
+
+            <article class="project-card reveal reveal-delay">
+              <div class="project-image"><img src="../assets/img/project2.png" alt="PPS project preview" loading="lazy"><span class="project-index">02</span></div>
+              <div class="project-content"><div class="project-tags"><span>School</span><span>Landing Page</span></div><h4>Persatuan Pelajar Spesus</h4><p>A student-organization website built to present identity, activities, and information.</p><a class="project-link" href="https://persatuanpelajarspesus.netlify.app" target="_blank" rel="noopener noreferrer">Visit project <span>↗</span></a></div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-image"><img src="../assets/img/project3.png" alt="Ayam Empuk Mba Amel project preview" loading="lazy"><span class="project-index">03</span></div>
+              <div class="project-content"><div class="project-tags"><span>Client</span><span>Restaurant</span></div><h4>Ayam Empuk Mba Amel</h4><p>A lightweight restaurant landing page concept with a clear, local-business focused layout.</p><a class="project-link" href="https://ayam-mba-amel.vercel.app" target="_blank" rel="noopener noreferrer">Visit project <span>↗</span></a></div>
+            </article>
+
+            <article class="project-card reveal reveal-delay">
+              <div class="project-image"><img src="../assets/img/project4.jpeg" alt="Simple Hand Gesture Tracker project preview" loading="lazy"><span class="project-index">04</span></div>
+              <div class="project-content"><div class="project-tags"><span>JavaScript</span><span>Computer Vision</span></div><h4>Simple Hand Gesture Tracker</h4><p>A browser experiment that translates hand gestures into simple interface actions.</p><a class="project-link" href="https://handtrack-delta.vercel.app" target="_blank" rel="noopener noreferrer">Visit project <span>↗</span></a></div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-image"><img src="../assets/img/project5.png" alt="Liam Juragan online game store project preview" loading="lazy"><span class="project-index">05</span></div>
+              <div class="project-content"><div class="project-tags"><span>E-Commerce</span><span>Gaming</span></div><h4>Liam Juragan</h4><p>An online game store concept focused on simple navigation and product presentation.</p><a class="project-link" href="https://liamjuraganstore.netlify.app" target="_blank" rel="noopener noreferrer">Visit project <span>↗</span></a></div>
+            </article>
+          </div>
+        </div>
+
+        <div class="certificate-wrap reveal">
+          <div class="certificate-copy"><span class="certificate-kicker">Proof of learning</span><h3>Certificates</h3><p>A growing collection of certificates and completed learning milestones.</p></div>
+          <div class="certificate-image"><img src="../assets/img/certificate.jpeg" alt="Mikhael Christo certificate" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-border contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span> 04 — Contact</p>
+          <h2>Let's make<br><em>something.</em></h2>
+          <p class="section-lead">Have an idea, a website project, or just want to talk about code? Contact me.</p>
+        </div>
+
+        <div class="contact-list reveal reveal-delay">
+          <a class="contact-item" href="mailto:deheybros@gmail.com"><span class="contact-icon">@</span><span><small>Email</small><strong>deheybros@gmail.com</strong></span><span class="arrow">↗</span></a>
+          <a class="contact-item" href="https://www.instagram.com/mikaelycv?stkn=dzVyNG9ibWZkY2Q1" target="_blank" rel="noopener noreferrer"><span class="contact-icon">ig</span><span><small>Instagram</small><strong>@mikaelycv</strong></span><span class="arrow">↗</span></a>
+          <a class="contact-item" href="https://github.com/deheybros-web" target="_blank" rel="noopener noreferrer"><span class="contact-icon">gh</span><span><small>GitHub</small><strong>deheybros-web</strong></span><span class="arrow">↗</span></a>
+          <a class="contact-item" href="https://wa.me/6285169935767" target="_blank" rel="noopener noreferrer"><span class="contact-icon">wa</span><span><small>WhatsApp</small><strong>+62 851-6993-5767</strong></span><span class="arrow">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <a class="brand" href="#top"><span class="brand-main">mycv</span><span class="brand-divider">|</span><span class="brand-code">code</span></a>
+      <div class="footer-nav"><a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="currentYear"></span> Mikhael Christo. All rights reserved.</p>
+      <p>Created by <strong>Mikhael Christo</strong></p>
+    </div>
+  </footer>
+
+  <script src="../js/script.js" defer></script>
+</body>
+</html>

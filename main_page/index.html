@@ -4,13 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Mikhael Christo — Front-End Web Developer portfolio focused on responsive interfaces and Vanilla JavaScript.">
-  <meta name="theme-color" content="#0a0d14">
+  <meta name="theme-color" content="#071426">
   <title>Mikhael Christo | Front-End Web Developer</title>
   <link rel="stylesheet" href="../css/style.css">
   <script>
     (() => {
-      const savedTheme = localStorage.getItem('theme');
-      if (savedTheme === 'light') document.documentElement.dataset.theme = 'light';
+      try {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') document.documentElement.dataset.theme = 'light';
+      } catch (error) {
+        // The site still works when browser storage is unavailable.
+      }
     })();
   </script>
 </head>
@@ -76,31 +80,59 @@
       </div>
     </section>
 
-    <section class="section section-border" id="about">
+    <section class="section section-border about-section" id="about">
       <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow"><span></span> 01 — About</p>
-          <h2>A little bit<br><em>about me.</em></h2>
+        <div class="section-heading reveal about-heading">
+          <p class="eyebrow"><span></span> 01 — Get to know me</p>
+          <h2>More than<br><em>just a student.</em></h2>
+          <p class="section-lead">A curious learner who turns ideas, habits, and small experiments into practical web experiences.</p>
         </div>
 
         <div class="about-layout">
           <div class="about-intro reveal">
-            <p class="large-copy">I build practical web interfaces with a focus on responsive design and meaningful interaction.</p>
+            <div class="about-intro-top">
+              <span class="about-sticker" aria-hidden="true">HELLO<br>WORLD!</span>
+              <span class="about-status"><span></span> Currently learning & building</span>
+            </div>
+            <p class="large-copy">I enjoy turning ideas into interfaces that feel clear, useful, and enjoyable to explore.</p>
             <p>I specialize in building responsive and interactive web interfaces using HTML, CSS, and Vanilla JavaScript. My focus is on DOM manipulation, event-driven interactions, dynamic content rendering, and client-side functionality. I develop practical web projects with a strong emphasis on interface structure, user experience, and clean, maintainable code. I am also expanding my knowledge of backend development to build more complete web applications.</p>
+            <div class="about-toolkit" aria-label="Core technologies">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Currently exploring backend</span>
+            </div>
           </div>
 
           <div class="about-facts reveal reveal-delay">
             <article class="fact-card fact-card-name">
-              <span class="fact-number">01 / PROFILE</span>
-              <div><h3>Name</h3><p>Mikhael Yehoshua Christo Vianest</p></div>
+              <span class="fact-number">01 / THE PERSON</span>
+              <div class="fact-content">
+                <span class="fact-icon" aria-hidden="true">✳</span>
+                <h3>Mikhael Yehoshua Christo Vianest</h3>
+                <p>Developer in progress · Student · Builder</p>
+              </div>
             </article>
-            <article class="fact-card">
-              <span class="fact-number">02 / ORIGIN</span>
-              <div><h3>Birth place & date</h3><p>Sleman, Indonesia<br>27 December 2011</p></div>
+
+            <article class="fact-card fact-card-origin">
+              <span class="fact-number">02 / ROOTS</span>
+              <div class="fact-content">
+                <span class="fact-icon" aria-hidden="true">⌖</span>
+                <h3>Based in Indonesia</h3>
+                <p>Sleman, Indonesia<br>27 December 2011</p>
+              </div>
             </article>
+
+            <article class="fact-card fact-card-hobby">
+              <span class="fact-number">03 / WHAT I ENJOY</span>
+              <div class="fact-content">
+                <span class="fact-icon" aria-hidden="true">⌘</span>
+                <h3>Build, explore, repeat.</h3>
+                <p>Building small web projects, exploring interface ideas, and learning new development concepts through hands-on practice.</p>
+              </div>
+            </article>
+
             <article class="fact-card fact-card-wide">
-              <span class="fact-number">03 / EDUCATION</span>
-              <div><h3>Education</h3>
+              <span class="fact-number">04 / LEARNING JOURNEY</span>
+              <div class="fact-content">
+                <h3>My education</h3>
                 <div class="education-timeline">
                   <div><span>Grade 1–4</span><strong>SDK Thomas Aquino</strong></div>
                   <div><span>Grade 4–6</span><strong>SD Santa Maria</strong></div>
@@ -109,11 +141,12 @@
                 </div>
               </div>
             </article>
-            <article class="fact-card fact-card-wide fact-card-hobby">
-              <span class="fact-number">04 / INTEREST</span>
-              <div><h3>Hobby</h3><p>Building small web projects, exploring interface ideas, and learning new development concepts through hands-on practice.</p></div>
-            </article>
           </div>
+        </div>
+
+        <div class="about-bottom-note reveal">
+          <span class="about-bottom-mark" aria-hidden="true">↗</span>
+          <p><strong>My approach:</strong> learn the fundamentals, build something real, understand what went wrong, and improve it one iteration at a time.</p>
         </div>
       </div>
     </section>
@@ -169,17 +202,17 @@
           </div>
           <div class="project-grid" id="projectGrid">
             <article class="project-card reveal" data-category="gaming">
-              <div class="project-image"><img src="../assets/img/project1.PNG" alt="ShiftTiers project preview" loading="lazy"><span class="project-index">01</span></div>
+              <div class="project-image"><img src="../assets/img/project1.png" alt="ShiftTiers project preview" loading="lazy"><span class="project-index">01</span></div>
               <div class="project-content"><div class="project-tags"><span>Community</span><span>Gaming</span></div><h4>ShiftTiers</h4><p>A Minecraft PvP community platform for players, tiering, and community identity.</p><a class="project-link" href="https://shiftiers.vercel.app" target="_blank" rel="noopener noreferrer">Visit project <span>↗</span></a></div>
             </article>
 
             <article class="project-card reveal reveal-delay" data-category="school">
-              <div class="project-image"><img src="../assets/img/project2.PNG" alt="PPS project preview" loading="lazy"><span class="project-index">02</span></div>
+              <div class="project-image"><img src="../assets/img/project2.png" alt="PPS project preview" loading="lazy"><span class="project-index">02</span></div>
               <div class="project-content"><div class="project-tags"><span>School</span><span>Landing Page</span></div><h4>Persatuan Pelajar Spesus</h4><p>A student-organization website built to present identity, activities, and information.</p><a class="project-link" href="https://persatuanpelajarspesus.netlify.app" target="_blank" rel="noopener noreferrer">Visit project <span>↗</span></a></div>
             </article>
 
             <article class="project-card reveal" data-category="web">
-              <div class="project-image"><img src="../assets/img/project3.PNG" alt="Ayam Empuk Mba Amel project preview" loading="lazy"><span class="project-index">03</span></div>
+              <div class="project-image"><img src="../assets/img/project3.png" alt="Ayam Empuk Mba Amel project preview" loading="lazy"><span class="project-index">03</span></div>
               <div class="project-content"><div class="project-tags"><span>Client</span><span>Restaurant</span></div><h4>Ayam Empuk Mba Amel</h4><p>A lightweight restaurant landing page concept with a clear, local-business focused layout.</p><a class="project-link" href="https://ayam-mba-amel.vercel.app" target="_blank" rel="noopener noreferrer">Visit project <span>↗</span></a></div>
             </article>
 
@@ -189,16 +222,16 @@
             </article>
 
             <article class="project-card reveal" data-category="web">
-              <div class="project-image"><img src="../assets/img/project5.PNG" alt="Liam Juragan online game store project preview" loading="lazy"><span class="project-index">05</span></div>
+              <div class="project-image"><img src="../assets/img/project5.png" alt="Liam Juragan online game store project preview" loading="lazy"><span class="project-index">05</span></div>
               <div class="project-content"><div class="project-tags"><span>E-Commerce</span><span>Gaming</span></div><h4>Liam Juragan</h4><p>An online game store concept focused on simple navigation and product presentation.</p><a class="project-link" href="https://liamjuraganstore.netlify.app" target="_blank" rel="noopener noreferrer">Visit project <span>↗</span></a></div>
             </article>
 
             <article class="project-card reveal reveal-delay" data-category="web">
-              <div class="project-image"><img src="../assets/img/project6.PNG" alt="Kopidia cafe website preview" loading="lazy"><span class="project-index">06</span></div>
+              <div class="project-image"><img src="../assets/img/project6.png" alt="Kopidia cafe website preview" loading="lazy"><span class="project-index">06</span></div>
               <div class="project-content"><div class="project-tags"><span>Website</span><span>Café</span></div><h4>Kopidia</h4><p>A café website designed to introduce the brand, present its atmosphere, and make key information easy to explore.</p><a class="project-link" href="https://kopidia.vercel.app" target="_blank" rel="noopener noreferrer">Visit project <span>↗</span></a></div>
             </article>
             <article class="project-card reveal" data-category="tools">
-              <div class="project-image"><img src="../assets/img/project7.PNG" alt="Password Generator project preview" loading="lazy"><span class="project-index">07</span></div>
+              <div class="project-image"><img src="../assets/img/project7.png" alt="Password Generator project preview" loading="lazy"><span class="project-index">07</span></div>
               <div class="project-content"><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><h4>Password Generator</h4><p>A browser-based utility for generating random passwords through a simple, interactive interface.</p><a class="project-link" href="https://passgen-mycv.vercel.app" target="_blank" rel="noopener noreferrer">Visit project <span>↗</span></a></div>
             </article>
           </div>

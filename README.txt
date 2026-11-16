@@ -1,4 +1,4 @@
-MIKHAEL CHRISTO — PERSONAL PORTFOLIO
+MIKHAEL CHRISTO'S PERSONAL PORTOFOLIO
 
 Folder structure:
 assets/img/       -> put your .jpeg images here
